@@ -29,3 +29,20 @@
 
 ## tooltip自定义
 通过 `<Axis>` 组件上的 [itemTpl](../api/axis.md#itemTpl) 和 [containerTpl](../api/axis.md#containerTpl) 两个属性用通过 HTML 去控制 tooltip 的显示。
+
+## 双轴图如何对齐刻度线
+配置 `tickCount`字段
+```
+scale = {
+  call: {
+    min: 0
+  },
+  peoples: {
+    min: 0,
+    tickCount: 4
+  },
+  waiting: {
+		min: 0,
+    tickCount: 4  }
+}
+```
